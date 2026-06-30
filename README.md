@@ -1,5 +1,6 @@
-<h1 align="center">Hi, I'm Néstor 👋</h1>
-<h3 align="center">AI Builder — Automations · AI Agents · Full-Stack Web Apps</h3>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NestorPVsf/NestorPVsf/main/banner.png" alt="Néstor Martínez — AI Builder" width="100%" />
+</p>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=22&duration=3000&pause=800&color=22D3EE&center=true&vCenter=true&width=620&lines=Automations+with+n8n;AI+chatbots+%26+voice+agents;Full-stack+web+apps+(Next.js+%2B+Supabase);WhatsApp+automation+with+AI" alt="Typing SVG" />
