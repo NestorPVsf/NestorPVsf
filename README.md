@@ -1,56 +1,64 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NestorPVsf/NestorPVsf/main/banner.png" alt="Néstor Martínez — AI Builder" width="100%" />
+
+  <img src="https://raw.githubusercontent.com/NestorPVsf/NestorPVsf/main/banner.png" alt="Néstor Martínez — AI consultant and engineer" width="100%" />
+
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=22&duration=3000&pause=800&color=22D3EE&center=true&vCenter=true&width=620&lines=Automations+with+n8n;AI+chatbots+%26+voice+agents;Full-stack+web+apps+(Next.js+%2B+Supabase);WhatsApp+automation+with+AI" alt="Typing SVG" />
+
+  <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=22&duration=3000&pause=800&color=22D3EE&center=true&vCenter=true&width=680&lines=AI+consultant+and+engineer;Agents+that+run+unsupervised+in+production;n8n+automation+and+the+AI+layer+on+top;Full-stack+apps+underneath+(Next.js+%2B+Supabase)" alt="Typing SVG" />
+
 </p>
 
 <p align="center">
-I build AI-powered systems that help founders scale without breaking their team —<br/>
-from <b>n8n</b> automations and AI chatbots/voice agents to full-stack web apps with <b>Next.js + Supabase</b>.
+
+<b>One person instead of three suppliers.</b><br/>
+I map the process, build the agent, and ship the application it runs on.
+
 </p>
 
----
 
-### 🛠️ What I do
 
-- ⚡ **Automation** — n8n workflows that remove repetitive manual work (CRM, invoicing, lead capture, notifications)
-- 🤖 **AI agents** — chatbots & voice agents (OpenAI, Claude, Retell) that answer, qualify and book leads 24/7
-- 💻 **Web apps** — dashboards, membership platforms and SaaS built with Next.js, React & Supabase
-- 📲 **WhatsApp automation** — AI replies, notifications and CRM sync on the WhatsApp Business API
+How I work
 
-### ⚙️ Tech I work with
+Process first. I came to this from industrial engineering, an MBA and years in financial consulting. I start from how the business actually works, not from the model.
 
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+The AI layer. Agents, retrieval, and the part that takes the time — deciding what the agent isn't allowed to do.
 
-### 📊 GitHub Stats
+The application underneath. Agents need somewhere to live. I build that too, so there's no coordination tax and no handoffs.
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=NestorPVsf&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=NestorPVsf&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
-</p>
+Running in production
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=NestorPVsf&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=10" />
-</p>
+Autonomous WhatsApp agent — immigration law firm
 
-### 📌 Featured projects
+11 tools: four retrieve from their legal corpus, three act, four manage its own internal state. It never does arithmetic, because it quotes fees — it calls a whitelisted evaluator instead. Without country, qualification and year, it asks rather than guessing at a legal answer.
 
-- **[graphify](https://github.com/NestorPVsf/graphify)** — Turn any folder of code, docs or papers into a queryable knowledge graph (works with Claude Code, Codex, Cursor, Gemini CLI…)
-- **[sinapsis](https://github.com/NestorPVsf/sinapsis)** — Intelligent skill system for Claude Code that learns and adapts across projects
-- **[claude-testing-kit](https://github.com/NestorPVsf/claude-testing-kit)** — Drop-in TDD + E2E testing kit for Next.js projects
-- **[codex-plugin-cc](https://github.com/NestorPVsf/codex-plugin-cc)** — Use Codex from Claude Code to review code or delegate tasks
+A SaaS a business runs entirely from WhatsApp
 
-### 🌐 Let's connect
+The owner types an order into a chat. The system issues the invoice, records the expense, updates the CRM and feeds a dashboard. 22 tools, a separate read-only role for their accountant, and EU VAT validated against the official registry rather than a regex.
 
-🔗 [podervsfuerza.com](https://podervsfuerza.com)
+Consumer assistant, conversations that run for months
+
+No menus, no forms, no flow. A conversation that long outgrows any context window, so memory is tiered: Redis for the live conversation, Postgres for what has to survive it. Answers are retrieved from the corpus rather than packed into the prompt.
+
+What production taught me
+
+An agent will lie to itself across turns if you only persist what it said.
+
+A tool failed silently in one of my systems and the model announced success anyway. That announcement went into conversation history, and on the next turn the model read its own fiction as fact and acted on it. The fix was persisting the tool execution log alongside the assistant message, so the agent's memory holds what happened instead of what it claimed happened.
+
+That failure mode is invisible until it isn't.
+
+Where the code is
+
+Client work lives in private repositories, so this profile is deliberately quiet. Happy to walk through architecture and decisions on a call — usually more useful than a repo tour anyway.
+
+The forks here are tools I use in my own workflow, not projects of mine.
+
+Tech I work with
+
+Elsewhere
+
+🌐 podervsfuerza.com &nbsp;·&nbsp; 💼 LinkedIn &nbsp;·&nbsp; ✉️ info@podervsfuerza.com
+
+<p align="center"><sub>Madrid, working remotely · Available for project and hourly work</sub></p>
