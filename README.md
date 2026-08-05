@@ -41,11 +41,22 @@ A tool failed silently in one of my systems and the model announced success anyw
 
 That failure mode is invisible until it isn't.
 
-### Where the code is
+### Open source
 
-Client work lives in private repositories, so this profile is deliberately quiet. Happy to walk through architecture and decisions on a call — usually more useful than a repo tour anyway.
+Tools I built because production kept needing them. All TypeScript, all with CI and versioned npm releases:
 
-*The forks here are tools I use in my own workflow, not projects of mine.*
+- **[ragproof](https://github.com/NestorPVsf/ragproof)** — your RAG, put to proof: self-correcting answers and CI eval gates that block the merge when hallucination rate crosses your threshold.
+- **[llm-quorum](https://github.com/NestorPVsf/llm-quorum)** — route AI tasks to the right model CLI, with automatic fallback and cross-model consensus review.
+- **[n8n-workflows-mcp](https://github.com/NestorPVsf/n8n-workflows-mcp)** — turn your deployed n8n workflows into tools your AI agents can call, without rewriting anything.
+- **[castloop](https://github.com/NestorPVsf/castloop)** — multi-agent content pipeline that doesn't break in production: research → publish → analytics, every handoff judged and traced, human gate before publishing.
+- **[instinctkit](https://github.com/NestorPVsf/instinctkit)** — survival kit for self-learning Claude Code setups: starter instincts plus guardrails against silent agent failures.
+- **[listingkit](https://github.com/NestorPVsf/listingkit)** — one property listing in, six branded marketing assets out.
+
+### Where the client code is
+
+Client work lives in private repositories. Happy to walk through architecture and decisions on a call — usually more useful than a repo tour anyway.
+
+*The forks on this profile are tools I use in my own workflow, not projects of mine.*
 
 ### Tech I work with
 
@@ -63,6 +74,6 @@ Client work lives in private repositories, so this profile is deliberately quiet
 
 ### Elsewhere
 
-🌐 [podervsfuerza.com](https://podervsfuerza.com) &nbsp;·&nbsp; 💼 [LinkedIn](https://www.linkedin.com/in/nestor-martinez-batista-pvsf/) &nbsp;·&nbsp; ✉️ info@podervsfuerza.com
+🌐 [nestormartinez.dev](https://nestormartinez.dev) &nbsp;·&nbsp; 🧭 [podervsfuerza.com](https://podervsfuerza.com) &nbsp;·&nbsp; 💼 [LinkedIn](https://www.linkedin.com/in/nestor-martinez-batista-pvsf/) &nbsp;·&nbsp; ✉️ info@podervsfuerza.com
 
 <p align="center"><sub>Madrid, working remotely · Available for project and hourly work</sub></p>
