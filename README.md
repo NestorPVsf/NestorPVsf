@@ -74,6 +74,6 @@ Client work lives in private repositories. Happy to walk through architecture an
 
 ### Elsewhere
 
-🌐 [nestormartinez.dev](https://nestormartinez.dev) &nbsp;·&nbsp; 🧭 [podervsfuerza.com](https://podervsfuerza.com) &nbsp;·&nbsp; 💼 [LinkedIn](https://www.linkedin.com/in/nestor-martinez-batista-pvsf/) &nbsp;·&nbsp; ✉️ info@podervsfuerza.com
+🌐 [nestormartinez.dev](https://www.nestormartinez.dev) &nbsp;·&nbsp; 🧭 [podervsfuerza.com](https://podervsfuerza.com) &nbsp;·&nbsp; 💼 [LinkedIn](https://www.linkedin.com/in/nestor-martinez-batista-pvsf/) &nbsp;·&nbsp; ✉️ info@podervsfuerza.com
 
 <p align="center"><sub>Madrid, working remotely · Available for project and hourly work</sub></p>
